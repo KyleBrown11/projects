@@ -1,0 +1,12 @@
+body {
+	background-color: black;
+}
+#box1 {
+	border: 1px solid white;
+}
+h2 {
+	color: white;
+}
+p {
+	color: green;
+}
