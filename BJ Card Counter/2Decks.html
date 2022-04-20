@@ -1,18 +1,20 @@
 <html !DOCTYPE>
 <head>
-    <nav>
-        <a href="index.html"><button>Go Back</button></a>
-        <a href="2Decks.html"><button>Reset Page</button></a>
-    </nav>
+    <link rel="stylesheet" href="style.css">
 </head>
     <body>
 
+        <div id="container">
 
-        <h3>2 Decks</h3>
-        <table style="width:25%;">
-            <script>
+        
+            <a href="index.html"><button id="GoBack">Go Back</button></a>
+            <a href="2Decks.html"><button id="Reset">Reset Page</button></a>
 
-            
+            <h2>2 Decks</h2>
+            <table id="table1">
+                <script>
+
+                
                 var Deck1 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
                 var Deck2 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
                 var Deck3 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
@@ -206,19 +208,19 @@
 
 
 
-            <tr><td><button id="2C" onclick="TwoFunction()">2</button></td>   
-            <td><button id="3S" onclick="ThreeFunction()">3</button></td>
-            <td><button id="4S" onclick="FourFunction()">4</button></td>
-            <td><button id="5C" onclick="FiveFunction()">5</button></td></tr>
-            <tr><td><button id="6S" onclick="SixFunction()">6</button></td>
-            <td><button id="7S" onclick="SevenFunction()">7</button></td>
-            <td><button id="8S" onclick="EightFunction()">8</button></td>
-            <td><button id="9S" onclick="NineFunction()">9</button></tr>
-            <tr><td><button id="10S" onclick="TenFunction()">10</button></td>
-            <td><button id="JS" onclick="JackFunction()">J</button></td>
-            <td><button id="QS" onclick="QueenFunction()">Q</button></td>
-            <td><button id="KC" onclick="KingFunction()">K</button></td></tr>
-            <tr><td><button id="AC" onclick="AceFunction()">A</button></td></tr>    
+            <tr><td><button id="C2" onclick="TwoFunction()">2</button></td>   
+            <td><button id="C3" onclick="ThreeFunction()">3</button></td>
+            <td><button id="C4" onclick="FourFunction()">4</button></td>
+            <td><button id="C5" onclick="FiveFunction()">5</button></td></tr>
+            <tr><td><button id="C6" onclick="SixFunction()">6</button></td>
+            <td><button id="C7" onclick="SevenFunction()">7</button></td>
+            <td><button id="C8" onclick="EightFunction()">8</button></td>
+            <td><button id="C9" onclick="NineFunction()">9</button></tr>
+            <tr><td><button id="C10" onclick="TenFunction()">10</button></td>
+            <td><button id="CJ" onclick="JackFunction()">J</button></td>
+            <td><button id="CQ" onclick="QueenFunction()">Q</button></td>
+            <td><button id="CK" onclick="KingFunction()">K</button></td></tr>
+            <tr><td><button id="CA" onclick="AceFunction()">A</button></td></tr>     
         </table>
 
         <br><br>
@@ -235,7 +237,8 @@
             7 Decks = 364 ------- 28 of Each Suit
             8 Decks = 416 ------- 32 of Each Suit
         -->
-        <table style="text-align:center; width:25%;">
+        <div id="tablediv2">
+            <table id="table2">
             <tr><th>Card #</th><th></th><th>Remaining</th></tr>    
             <tr><td>2</td><td>-</td><td id="2C8D">8</td></tr>
             <tr><td>3</td><td>-</td><td id="3CDHS">8</td></tr>
@@ -251,15 +254,17 @@
             <tr><td>K</td><td>-</td><td id="KCDHS">8</td></tr>
             <tr><td>A</td><td>-</td><td id="ACDHS">8</td></tr>
         </table>
-
+        </div>
         <br>
         <br>
-        <table>
+        <div id="tablediv3">
+            <table id="table3">
             <tr><th>Running Count</th></tr>
             <tr><td id="RC">0</td></tr>
             <tr><td id="Neg" hidden>0</td></tr>
             <tr><td id="Pos" hidden>0</td></tr>
         </table>
+        </div>
 
     
     </body>
