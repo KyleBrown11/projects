@@ -127,7 +127,7 @@
 				<div class="col-lg-9">
 				
 					<h3 id="Strategies" style="text-align:center">Bocage</h3><br>
-					<img src="bocage-default.jpeg" width="100%" id="defaultimage">
+					<img src="img/bocage-default.jpeg" width="100%" id="defaultimage">
 					<video id="video" hidden>
 						<source id="source" type="video/mp4">
 					</video>
