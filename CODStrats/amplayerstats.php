@@ -4,7 +4,7 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg">
+				<div class="col-lg-12">
 					<h3>AM Players Stats</h3>
 					<div id="teams">
 						<table style="border:1px solid black; width:100%; text-align:center">
