@@ -6,34 +6,24 @@
 	<!-- Start of body content after navbar is loaded -->
 	<body>
 		<div class="container-fluid">
-			<div class="row align-items-start">
+			<div class="row">
 				<div class="col-lg-12">
-					<h3>TopTier Teams</h3>
-					<div id="teams">
-					<table style="border:1px solid black; width:100%; text-align:center">
-					<tr>
-					<th>Team</th>
-					<th>Captain</th>
-					<th>Player 2</th>
-					<th>Player 3</th>
-					<th>Player 4</th>
-					<th>Substitute</th>
-					<th>Team Page</th>
-					</tr>
-					<tr>
-					<td>TopTier Gods</td>
-					<td>Turnt</td>
-					<td>Primenzo</td>
-					<td>Zelmorgof</td>
-					<td>CapnRuss</td>
-					<td>-</td>
-					<td>View</td>
-					</table>
-					</div>
+					<h6>Live</h6>
+						<!-- Add a placeholder for the Twitch embed -->
+						<div id="twitch-embed"></div>
+
+							<!-- Load the Twitch embed script -->
+							<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+							<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+							<script type="text/javascript">
+							  new Twitch.Player("twitch-embed", {
+								channel: "valorant"
+							  });
+							</script>				
 				</div>
 			</div>
-		</div>			
-					
+		</div>
 	</body>
 	
 	<!-- Start of footer content after body is loaded -->

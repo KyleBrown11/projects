@@ -4,8 +4,7 @@
 		<title>Sample Website Title</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
 		
 		
 	</head>
@@ -24,11 +23,20 @@
 			  <a class="nav-link active" href="index.php">Home</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#">About</a>
+			  <a class="nav-link" href="amplayerstats.php">AM Player Stats</a>
 			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="strategies.php">Strategies</a>
-			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Strategies
+			  </a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<li><a class="dropdown-item" href="#">Berlin</a></li>
+				<li><a class="dropdown-item" href="bocage.php">Bocage</a></li>
+				<li><a class="dropdown-item" href="#">Desert Seige</a></li>
+				<li><a class="dropdown-item" href="#">Gavutu</a></li>
+				<li><a class="dropdown-item" href="#">Tuscan</a></li>
+				</ul>
+			</li> 
 			<!-- <li class="nav-item dropdown">
 			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				Dropdown
